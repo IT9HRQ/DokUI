@@ -24,10 +24,9 @@ if (!defined('DOKU_INC')) die();
 	<nav class="tm-navbar uk-navbar uk-navbar-attached">
 		<div class="uk-container uk-container-center">
 
-			<a class="uk-navbar-brand dw-navbar-brand uk-hidden-small" href="<?=DOKU_URL?>">
-				<i class="uk-icon-logo"></i> 
-				<?=$conf['title']?>
-			</a>
+			<a  href="<?=DOKU_URL?>"
+                class="uk-navbar-brand dw-navbar-brand uk-hidden-small" 
+                ><i class="uk-icon-logo"></i> <?=$conf['title']?></a>
 
 			<ul id="dw-navbar-menu" class="uk-navbar-nav uk-hidden-small">
 				<?php  
@@ -40,8 +39,8 @@ if (!defined('DOKU_INC')) die();
 			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
 
 			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">				
-				<a href="<?=DOKU_URL?>" class="dw-navbar-brand">
-					<i class="uk-icon-wrench"></i> <?=$conf['title']?>
+				<a href="<?=DOKU_URL?>" class="dw-navbar-brand"
+                   ><i class="uk-icon-logo"></i> <?=$conf['title']?>
 				</a>
 			</div>
 			
@@ -50,7 +49,7 @@ if (!defined('DOKU_INC')) die();
 					<ul class="uk-navbar-nav">
 						<li data-uk-dropdown>
 							<a href=""><?=userlink()?> <i class="uk-icon-caret-down"></i></a>
-							<div class="uk-dropdown uk-dropdown-navbar">
+							<div class="uk-dropdown uk-dropdown-flip uk-dropdown-navbar">
 								<ul class="uk-nav uk-nav-navbar">															
 									<?php tpl_action('profile', 1, 'li') ?>
 									<?php tpl_action('login', 1, 'li') ?>
@@ -67,11 +66,10 @@ if (!defined('DOKU_INC')) die();
 	
 	<div class="tm-middle">
 		<div class="uk-container uk-container-center">
-
-			<div class="uk-grid" data-uk-grid-margin="">
+			<div class="uk-grid">
 
 				<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">
-					<ul class="tm-nav uk-nav" data-uk-nav="">
+					<ul class="tm-nav uk-nav">
 						<?php
 							$page = explode(':',tpl_pagetitle(NULL,true));
 							array_pop($page);
@@ -84,21 +82,13 @@ if (!defined('DOKU_INC')) die();
 				</div>
 
 				<div class="tm-main uk-width-medium-3-4">
-					
-                    <div class="less">
-                        <i class="icon-logo"></i>
-                        LESS
-                    </div>
-                    
                     <article class="uk-article dw-article">
-
 						<?php tpl_content() ?>
 						<?php echo tpl_action('edit',1,'li',1,'<span>','</span>'); ?>
-
-					</article>
+                    </article>
 				</div>
+                
 			</div>
-
 		</div>
 	</div>
 
@@ -114,11 +104,12 @@ if (!defined('DOKU_INC')) die();
 				?>
 			</ul>
 
-			<div class="uk-panel">
+			<div class="uk-panel">                
 				<?php echo tpl_include_page('footer',0,0) ?>
-				<a href="<?=DOKU_URL?>" class="dw-brand">					
-					<i class="uk-icon-wrench"></i> <?=$conf['title']?>
-				</a>
+				
+                <a  href="<?=DOKU_URL?>"
+                    class="dw-brand"
+                    ><i class="uk-icon-logo"></i> <?=$conf['title']?></a>         
 			</div>
 
 		</div>

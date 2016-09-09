@@ -758,3 +758,7 @@ a.dw-navbar-brand:hover {
 	margin:0 0 10px 0;
 	padding:0;
 }
+
+.uk-dropdown-flip {
+    width: 240px;
+}
