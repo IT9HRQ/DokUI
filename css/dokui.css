@@ -25,7 +25,7 @@ html {
  ========================================================================== */
 
 
-.tm-background { background: __brand_color_1__; }
+.tm-background { background: footer_background_color; }
 
 /*
  * Blocks
