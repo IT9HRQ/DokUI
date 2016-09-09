@@ -42,7 +42,6 @@ $(document).ready(function(){
 			;		
 		});
 	}
-	
 });
 	
 })(jQuery);

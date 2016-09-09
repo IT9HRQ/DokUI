@@ -25,7 +25,7 @@ if (!defined('DOKU_INC')) die();
 		<div class="uk-container uk-container-center">
 
 			<a class="uk-navbar-brand dw-navbar-brand uk-hidden-small" href="<?=DOKU_URL?>">
-				<i class="uk-icon-coffee"></i> 
+				<i class="uk-icon-logo"></i> 
 				<?=$conf['title']?>
 			</a>
 
