@@ -243,7 +243,7 @@ html {
 .tm-navbar {
     padding: 15px 0;
     border: none;
-    background: __brand_color_2__;
+    background: #252525;
 }
 
 .tm-navbar .uk-navbar-content,
