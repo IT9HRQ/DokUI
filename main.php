@@ -84,7 +84,13 @@ if (!defined('DOKU_INC')) die();
 				</div>
 
 				<div class="tm-main uk-width-medium-3-4">
-					<article class="uk-article dw-article">
+					
+                    <div class="less">
+                        <i class="icon-logo"></i>
+                        LESS
+                    </div>
+                    
+                    <article class="uk-article dw-article">
 
 						<?php tpl_content() ?>
 						<?php echo tpl_action('edit',1,'li',1,'<span>','</span>'); ?>
