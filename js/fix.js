@@ -42,6 +42,15 @@ $(document).ready(function(){
 			;		
 		});
 	}
+    
+    //
+    $("i.uk-icon-logo").each(function(){
+        var icon = $(this).css('content').replace(/[^0-9a-zA-Z_-]/gi, ""); 
+        $(this).replaceWith('<i class="uk-icon-'+icon+'"></i>');  
+        favicon.apply(icon, '000000', 'ffffff');
+    });
+    
+    
 });
 	
 })(jQuery);

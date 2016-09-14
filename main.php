@@ -13,7 +13,7 @@ if (!defined('DOKU_INC')) die();
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php tpl_pagetitle() ?> | <?php echo strip_tags($conf['title']) ?></title>	
-<link rel="shortcut icon" href="<?=DOKU_TPL?>images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="<?=DOKU_TPL?>favicon/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">
 <?php tpl_metaheaders() ?>
 </head>
